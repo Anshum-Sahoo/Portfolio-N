@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALEX RIVERS | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Manrope:wght@500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#410002",
+                    "inverse-surface": "#2f3131",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#747474",
+                    "surface": "#f9f9f9",
+                    "on-background": "#1a1c1c",
+                    "primary-fixed-dim": "#474747",
+                    "on-secondary-fixed-variant": "#3b3b3b",
+                    "surface-container": "#eeeeee",
+                    "background": "#f9f9f9",
+                    "on-tertiary": "#e2e2e2",
+                    "outline": "#777777",
+                    "on-tertiary-fixed": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "surface-variant": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#e2e2e2",
+                    "secondary-container": "#d6d4d3",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#e2e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-tertiary-container": "#ffffff",
+                    "on-surface-variant": "#474747",
+                    "secondary": "#5f5e5e",
+                    "on-primary-container": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "inverse-primary": "#c6c6c6",
+                    "on-primary": "#e2e2e2",
+                    "surface-tint": "#5e5e5e",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#5e5e5e",
+                    "tertiary-fixed": "#5e5e5e",
+                    "tertiary-fixed-dim": "#474747",
+                    "primary-container": "#3b3b3b",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-dim": "#dadada",
+                    "on-primary-fixed": "#ffffff",
+                    "outline-variant": "#c6c6c6",
+                    "on-secondary-container": "#1b1c1c",
+                    "tertiary": "#3b3b3b",
+                    "secondary-fixed-dim": "#acabab",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "secondary-fixed": "#c8c6c6",
+                    "primary": "#000000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tracking-architectural { letter-spacing: -0.02em; }
+        .tracking-editorial { letter-spacing: 0.1em; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary selection:text-surface-container-lowest">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#ffffff]/95 dark:bg-[#2f3131]/95 border-b border-[#c6c6c6] dark:border-[#5f5e5e] border-[1px]">
+<div class="flex justify-end items-center h-16 px-8 md:px-16 w-full max-w-screen-2xl mx-auto">
+<div class="flex gap-8 items-center">
+<a class="font-['Manrope'] font-medium uppercase tracking-[0.1em] text-xs text-[#5f5e5e] dark:text-[#c6c6c6] hover:opacity-80 transition-opacity duration-300" href="#about">ABOUT</a>
+<a class="font-['Manrope'] font-medium uppercase tracking-[0.1em] text-xs text-[#000000] dark:text-[#ffffff] border-b border-[#000000] dark:border-[#ffffff] pb-1 transition-opacity duration-300" href="#projects">PROJECTS</a>
+<a class="font-['Manrope'] font-medium uppercase tracking-[0.1em] text-xs text-[#5f5e5e] dark:text-[#c6c6c6] hover:opacity-80 transition-opacity duration-300" href="#contact">CONTACT</a>
+</div>
+</div>
+</nav>
+<main class="pt-16 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center px-8 md:px-16 max-w-screen-2xl mx-auto py-24">
+<div class="grid grid-cols-12 gap-6">
+<div class="col-span-12 md:col-start-3 md:col-span-8">
+<h1 class="font-headline font-extrabold text-6xl md:text-8xl tracking-architectural leading-[1.1] mb-12 text-primary">
+                    I AM ALEX,<br/>DEVELOPER &amp;<br/>DESIGNER.
+                </h1>
+<div class="flex flex-col md:flex-row gap-12 items-start md:items-end">
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-md leading-relaxed">
+                        I craft high-end editorial experiences and architectural web systems with technical precision and creative authority.
+                    </p>
+<div class="flex gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary font-label text-[10px] font-bold uppercase tracking-editorial transition-all hover:opacity-80">
+                            EXPLORE WORK
+                        </button>
+<button class="px-8 py-4 border border-outline font-label text-[10px] font-bold uppercase tracking-editorial transition-all hover:bg-surface-container">
+                            GET IN TOUCH
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-8 md:px-16 max-w-screen-2xl mx-auto py-32 border-t border-outline-variant" id="about">
+<div class="grid grid-cols-12 gap-6">
+<div class="col-span-12 md:col-span-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-editorial text-secondary">01. BIOGRAPHY</span>
+</div>
+<div class="col-span-12 md:col-start-4 md:col-span-7">
+<h2 class="font-headline font-medium text-4xl mb-12 tracking-tight">I build spaces that breathe through whitespace and hierarchy.</h2>
+<div class="space-y-8 font-body text-on-surface-variant text-lg leading-relaxed">
+<p>I approach web development as an architectural challenge. My philosophy centers on the removal of the unnecessary to highlight the essential.</p>
+<p>I collaborate with design studios and boutique firms to deliver digital platforms that prioritize typography and performance without compromising on aesthetic authority.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="px-8 md:px-16 max-w-screen-2xl mx-auto py-32 border-t border-outline-variant bg-surface-container-low">
+<div class="grid grid-cols-12 gap-6">
+<div class="col-span-12 md:col-span-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-editorial text-secondary">02. CAREER</span>
+</div>
+<div class="col-span-12 md:col-start-4 md:col-span-8 space-y-24">
+<div class="group border-b border-outline-variant pb-8">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline font-bold text-2xl">SENIOR UI DEVELOPER</h3>
+<span class="font-label text-xs tracking-widest text-secondary">2021 — PRESENT</span>
+</div>
+<p class="font-label text-xs uppercase tracking-widest text-secondary mb-6">STUDIO MONOLITH</p>
+<p class="font-body text-on-surface-variant max-w-xl">Leading the implementation of high-performance design systems for global architectural firms.</p>
+</div>
+<div class="group border-b border-outline-variant pb-8">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline font-bold text-2xl">CREATIVE TECHNOLOGIST</h3>
+<span class="font-label text-xs tracking-widest text-secondary">2018 — 2021</span>
+</div>
+<p class="font-label text-xs uppercase tracking-widest text-secondary mb-6">VOID AGENCY</p>
+<p class="font-body text-on-surface-variant max-w-xl">Developing interactive editorial layouts for digital fashion and art publications.</p>
+</div>
+<div class="group border-b border-outline-variant pb-8">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-headline font-bold text-2xl">FRONTEND ENGINEER</h3>
+<span class="font-label text-xs tracking-widest text-secondary">2016 — 2018</span>
+</div>
+<p class="font-label text-xs uppercase tracking-widest text-secondary mb-6">BASE FRAMEWORKS</p>
+<p class="font-body text-on-surface-variant max-w-xl">Optimizing core libraries for rapid prototyping of scalable web infrastructures.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-32 border-t border-outline-variant" id="projects">
+<div class="px-8 md:px-16 max-w-screen-2xl mx-auto grid grid-cols-12 gap-6 mb-16">
+<div class="col-span-12 md:col-span-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-editorial text-secondary">03. PORTFOLIO</span>
+</div>
+<div class="col-span-12 md:col-start-4 md:col-span-8">
+<h2 class="font-headline font-extrabold text-5xl md:text-6xl tracking-architectural">PROJECTS.</h2>
+</div>
+</div>
+<div class="relative">
+<div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory px-8 md:px-16 gap-8 pb-8">
+<!-- Project 01 -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start">
+<div class="aspect-[4/5] bg-surface-container flex items-center justify-center mb-8">
+<span class="font-headline text-surface-dim font-extrabold text-9xl">01</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-3xl uppercase">THE GRID SYSTEM</h3>
+<p class="font-body text-on-surface-variant leading-relaxed line-clamp-2">A precision CSS framework I built for strict vertical rhythm.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase py-1 px-3 bg-surface-container-highest">REACT</span>
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase py-1 px-3 bg-surface-container-highest">WEBGL</span>
+</div>
+<div class="flex gap-8 pt-6">
+<a class="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary hover:opacity-50 transition-opacity" href="#">CASE STUDY</a>
+<a class="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary hover:opacity-50 transition-opacity" href="#">SOURCE</a>
+</div>
+</div>
+</div>
+<!-- Project 02 -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start">
+<div class="aspect-[4/5] bg-surface-container-highest flex items-center justify-center mb-8">
+<span class="font-headline text-surface-variant font-extrabold text-9xl">02</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-3xl uppercase">EDITORIAL CANVAS</h3>
+<p class="font-body text-on-surface-variant leading-relaxed line-clamp-2">My publishing platform for high-end architectural photography.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase py-1 px-3 bg-surface-container-highest">NEXT.JS</span>
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase py-1 px-3 bg-surface-container-highest">SANITY</span>
+</div>
+<div class="flex gap-8 pt-6">
+<a class="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary hover:opacity-50 transition-opacity" href="#">CASE STUDY</a>
+<a class="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary hover:opacity-50 transition-opacity" href="#">LIVE SITE</a>
+</div>
+</div>
+</div>
+<!-- Project 03 -->
+<div class="flex-none w-[85vw] md:w-[450px] snap-start">
+<div class="aspect-[4/5] bg-primary flex items-center justify-center mb-8">
+<span class="font-headline text-surface font-extrabold text-9xl">03</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-3xl uppercase">MONOLITH.UI</h3>
+<p class="font-body text-on-surface-variant leading-relaxed line-clamp-2">A headless library I designed for luxury brand experiences.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase py-1 px-3 bg-surface-container-highest">RUST</span>
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase py-1 px-3 bg-surface-container-highest">TAILWIND</span>
+</div>
+<div class="flex gap-8 pt-6">
+<a class="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary hover:opacity-50 transition-opacity" href="#">PACKAGE</a>
+<a class="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary hover:opacity-50 transition-opacity" href="#">DOCS</a>
+</div>
+</div>
+</div>
+<!-- Project 04 (Spacer for alignment) -->
+<div class="flex-none w-8 md:w-16"></div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-8 md:px-16 max-w-screen-2xl mx-auto py-48 border-t border-outline-variant bg-inverse-surface text-surface" id="contact">
+<div class="grid grid-cols-12 gap-6">
+<div class="col-span-12 md:col-start-4 md:col-span-6 text-center">
+<span class="font-label text-[10px] font-bold uppercase tracking-editorial opacity-60 mb-12 block">HAVE A PROJECT IN MIND?</span>
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl tracking-architectural mb-16">LET'S BUILD SOMETHING PERMANENT.</h2>
+<a class="font-headline font-bold text-2xl md:text-4xl underline underline-offset-8 hover:opacity-80 transition-opacity" href="mailto:hello@alexrivers.web">HELLO@ALEXRIVERS.WEB</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#c6c6c6] dark:border-[#5f5e5e] border-[1px] bg-[#f9f9f9] dark:bg-[#2f3131]">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 md:px-16 gap-6 w-full max-w-screen-2xl mx-auto">
+<div class="font-['Inter'] font-bold uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e] dark:text-[#c6c6c6]">
+            © 2024 ALEX RIVERS. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-12">
+<a class="font-['Inter'] font-bold uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e] dark:text-[#c6c6c6] hover:text-[#000000] dark:hover:text-[#ffffff] transition-colors duration-300" href="#">EMAIL</a>
+<a class="font-['Inter'] font-bold uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e] dark:text-[#c6c6c6] hover:text-[#000000] dark:hover:text-[#ffffff] transition-colors duration-300" href="#">LINKEDIN</a>
+<a class="font-['Inter'] font-bold uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e] dark:text-[#c6c6c6] hover:text-[#000000] dark:hover:text-[#ffffff] transition-colors duration-300" href="#">GITHUB</a>
+</div>
+</div>
+</footer>
+</body></html>
