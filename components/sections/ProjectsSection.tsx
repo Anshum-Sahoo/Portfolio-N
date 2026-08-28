@@ -7,28 +7,40 @@ import { ProjectCard } from "../ui/ProjectCard";
 const projects = [
   {
     number: "01",
-    title: "THE GRID SYSTEM",
-    description: "A precision CSS framework I built for strict vertical rhythm.",
-    tags: ["REACT", "WEBGL"],
-    links: [{ label: "CASE STUDY", href: "#" }, { label: "SOURCE", href: "#" }],
+    title: "GESTURA",
+    description:
+      "Real-time sign language interpreter that translates hand gestures into readable text, making communication more accessible for the hearing-impaired community.",
+    tags: ["PYTHON", "OPENCV", "MEDIAPIPE", "TENSORFLOW"],
+    links: [
+      { label: "GITHUB", href: "#" },
+      { label: "DEMO", href: "#" },
+    ],
     bgColor: "bg-surface-container",
     numberColor: "text-surface-dim",
   },
   {
     number: "02",
-    title: "EDITORIAL CANVAS",
-    description: "My publishing platform for high-end architectural photography.",
-    tags: ["NEXT.JS", "SANITY"],
-    links: [{ label: "CASE STUDY", href: "#" }, { label: "LIVE SITE", href: "#" }],
+    title: "GREENCOMMUTE",
+    description:
+      "Air quality-based route optimization platform that analyzes real-time AQI data to recommend the healthiest daily commute routes for urban travelers.",
+    tags: ["PYTHON", "PANDAS", "FLASK", "POWER BI"],
+    links: [
+      { label: "GITHUB", href: "#" },
+      { label: "DEMO", href: "#" },
+    ],
     bgColor: "bg-surface-container-highest",
     numberColor: "text-surface-variant",
   },
   {
     number: "03",
-    title: "MONOLITH.UI",
-    description: "A headless library I designed for luxury brand experiences.",
-    tags: ["RUST", "TAILWIND"],
-    links: [{ label: "PACKAGE", href: "#" }, { label: "DOCS", href: "#" }],
+    title: "SALES ANALYTICS DASHBOARD",
+    description:
+      "End-to-end sales analytics dashboard that transforms raw transactional data into actionable business insights, surfacing trends, top products, and revenue forecasts.",
+    tags: ["POWER BI", "SQL", "EXCEL", "DAX"],
+    links: [
+      { label: "GITHUB", href: "#" },
+      { label: "DEMO", href: "#" },
+    ],
     bgColor: "bg-primary",
     numberColor: "text-surface",
   },
@@ -40,10 +52,6 @@ export function ProjectsSection() {
   const startXRef = useRef(0);
   const scrollStartRef = useRef(0);
   const [dragging, setDragging] = useState(false);
-
-  const scrollBy = useCallback((amount: number) => {
-    scrollRef.current?.scrollBy({ left: amount, behavior: "smooth" });
-  }, []);
 
   const onMouseDown = useCallback((e: ReactMouseEvent) => {
     isDraggingRef.current = true;

@@ -2,21 +2,21 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
-import { ExperienceSection } from "@/components/sections/ExperienceSection";
-
+import { IndustriesSection } from "@/components/sections/IndustriesSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      <main id="main-content" className="relative pt-16">
         <HeroSection />
         <AboutSection />
-        <ExperienceSection />
+        <IndustriesSection />
         <ContactSection />
       </main>
       <Footer />
     </>
   );
 }
+

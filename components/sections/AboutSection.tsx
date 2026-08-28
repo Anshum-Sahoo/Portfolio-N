@@ -6,7 +6,7 @@ import { SkillBadge } from "../ui/SkillBadge";
 
 export function AboutSection() {
   return (
-    <section id="about" className="px-8 md:px-16 max-w-screen-2xl mx-auto py-32 border-t border-outline-variant bg-surface relative z-20">
+    <section id="about" aria-labelledby="about-heading" className="px-8 md:px-16 max-w-screen-2xl mx-auto py-32 border-t border-outline-variant bg-surface relative z-20">
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,15 +15,15 @@ export function AboutSection() {
         className="grid grid-cols-12 gap-6"
       >
         <div className="col-span-12 md:col-span-2">
-          <span className="font-label text-[10px] font-bold uppercase tracking-editorial text-secondary">01. BIOGRAPHY</span>
+          <span id="about-heading" className="font-label text-[10px] font-bold uppercase tracking-editorial text-secondary">01. BIOGRAPHY</span>
         </div>
         <div className="col-span-12 md:col-start-4 md:col-span-7">
           <h2 className="font-headline font-medium text-4xl mb-12 tracking-tight text-primary">
-            I build and experiment with AI/ML systems focused on real-world problem solving.
+            I turn raw data into clear, actionable insights that support better decisions.
           </h2>
           <div className="space-y-8 font-body text-on-surface-variant text-lg leading-relaxed">
-            <p>I continuously improve my skills through hands-on work, exploring areas like deep learning, data analysis, and intelligent system design.</p>
-            <p>I actively work on personal and academic projects to develop skills in machine learning, deep learning, and data-driven systems, with a focus on real-world applications.</p>
+            <p>I am a B.Tech CSE (AI &amp; ML) student with a growing focus on Data Analytics and Business Intelligence. I work with Python, SQL, Power BI, and Excel to explore, clean, and visualize data in ways that are easy to understand and act on.</p>
+            <p>I am actively building skills in data-driven decision making — from writing efficient SQL queries and building Power BI dashboards to applying basic machine learning models. My goal is to bridge the gap between raw data and real-world business value.</p>
           </div>
           
           <div className="mt-24 space-y-12">

@@ -2,6 +2,27 @@
 
 import { useRef, useEffect, useState } from "react";
 
+/**
+ * isSafeUrl — validates href values before rendering them as link targets.
+ *
+ * WHY: React does NOT block javascript: protocol URLs in href attributes.
+ * If project links are ever sourced from a CMS or external data source,
+ * an attacker could inject "javascript:alert(1)" as a href value.
+ * This function acts as a defence-in-depth guard regardless of data source.
+ *
+ * ALLOWED: http:, https:, mailto:, and fragment anchors (#)
+ * BLOCKED: javascript:, data:, vbscript:, and any unknown protocol
+ */
+function isSafeUrl(url: string): boolean {
+  if (!url || url === "#") return true;
+  try {
+    const parsed = new URL(url, "https://example.com");
+    return ["http:", "https:", "mailto:"].includes(parsed.protocol);
+  } catch {
+    return false;
+  }
+}
+
 export function ProjectCard({
   index,
   number,
@@ -80,20 +101,27 @@ export function ProjectCard({
           ))}
         </div>
         <div className="flex gap-8 pt-6">
-          {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => {
-                if (isDragging) e.preventDefault();
-              }}
-              className="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary pb-0.5 hover:opacity-50 transition-opacity duration-300"
-            >
-              {link.label}
-            </a>
-          ))}
+          {links.map((link) => {
+            const safeHref = isSafeUrl(link.href) ? link.href : "#";
+            const isExternal = safeHref.startsWith("http");
+            return (
+              <a
+                key={link.label}
+                href={safeHref}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+                onClick={(e) => {
+                  if (isDragging) e.preventDefault();
+                }}
+                className="font-label text-[10px] font-bold uppercase tracking-editorial border-b border-primary pb-0.5 hover:opacity-50 transition-opacity duration-300"
+              >
+                {link.label}
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>
   );
 }
+

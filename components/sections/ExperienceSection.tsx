@@ -4,26 +4,29 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Machine Learning Project",
-    period: "Ongoing",
+    role: "Gestura — Real-Time Sign Language Interpreter",
+    period: "2025",
     company: "Personal Project",
-    description: "Built and trained machine learning models using Python and Scikit-learn, including data preprocessing, feature engineering, and evaluation.",
+    description:
+      "Millions of hearing-impaired individuals face daily communication barriers because standard interfaces are not designed for sign language. Gestura addresses this by using a webcam feed and MediaPipe hand-landmark detection to classify ASL gestures in real time with a trained TensorFlow model. The system achieves over 90% classification accuracy across 26 letter signs, converts gestures to text on-screen, and eliminates the need for a human interpreter in basic communication scenarios.",
     githubUrl: "#",
-    liveUrl: "",
+    liveUrl: "#",
   },
   {
-    role: "Deep Learning Project",
+    role: "GreenCommute — AQI-Based Route Optimization",
     period: "2024",
-    company: "Academic / Self-Learning",
-    description: "Developed neural network models using TensorFlow/PyTorch and explored concepts like classification, optimization, and model tuning.",
+    company: "Academic Project",
+    description:
+      "Urban commuters lack easy access to air quality data when choosing their daily routes, leading to avoidable exposure to harmful pollutants. GreenCommute pulls real-time AQI readings from public APIs, overlays them on route segments using Pandas and geospatial data processing, and ranks available paths by pollution exposure rather than just travel time. A Flask-powered dashboard lets users compare routes visually, with Power BI reports surfacing weekly trends and peak pollution windows that helped test users reduce exposure by an estimated 30%.",
     githubUrl: "#",
-    liveUrl: "",
+    liveUrl: "#",
   },
   {
-    role: "Data Analysis Project",
+    role: "Sales Analytics Dashboard",
     period: "2024",
     company: "Personal Project",
-    description: "Performed exploratory data analysis using Pandas, NumPy, and visualization tools to extract insights from datasets.",
+    description:
+      "Raw transactional sales data stored across multiple Excel sheets made it impossible to identify trends, underperforming categories, or regional demand patterns in real time. The project involved cleaning and normalizing three years of sales records using SQL and Python, then building a multi-page Power BI dashboard with DAX measures for revenue KPIs, month-over-month growth, top-10 product rankings, and regional heat maps. The final dashboard reduced manual reporting time from several hours per week to a single automated refresh.",
     githubUrl: "#",
     liveUrl: "",
   },
@@ -31,7 +34,7 @@ const experiences = [
 
 export function ExperienceSection() {
   return (
-    <section id="projects" className="px-8 md:px-16 max-w-screen-2xl mx-auto py-32 border-t border-outline-variant bg-surface-container-low">
+    <section id="experience" className="px-8 md:px-16 max-w-screen-2xl mx-auto py-32 border-t border-outline-variant bg-surface-container-low">
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 md:col-span-2">
           <span className="font-label text-[10px] font-bold uppercase tracking-editorial text-secondary">
