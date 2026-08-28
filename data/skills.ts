@@ -11,12 +11,5 @@ export const skillsData = [
     label: "PROGRAMMING",
     items: ["Python", "Java", "C++", "Git", "GitHub"],
   },
-  {
-    label: "MACHINE LEARNING",
-    items: ["Scikit-Learn", "TensorFlow", "Regression", "Classification", "Clustering"],
-  },
-  {
-    label: "WEB DEVELOPMENT",
-    items: ["Next.js", "React", "Tailwind CSS", "Flask"],
-  },
 ];
+
